@@ -1,0 +1,184 @@
+/*Main Area*/
+
+body {
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e4d9;
+    background-image: url('../images/pattern.png');
+}
+
+#mainheader {
+    background-color: #a593c2;
+}
+
+
+/*Top Menu*/
+
+nav {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*Side Menu*/
+
+.mainContent ul {
+    padding-inline-start: 0px;
+    margin-right: 0;
+    padding: 0.75rem;
+}
+
+.mainContent ul>a>li {
+    background-color: #cf4522;
+    color: #fff;
+    list-style: none;
+    padding: 14px 25px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.mainContent ul>a>li:hover {
+    background-color: #B43110;
+}
+
+.mainContent ul>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mainContent {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pieGallery {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.pieCard {
+    display: flex;
+    flex-direction: column;
+    margin: .4rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    padding: .4rem;
+    flex-grow: 2;
+}
+
+.pieCard>h5,
+.pieCard>p {
+    margin: .2rem;
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardRow>h5,
+.cardRow>p {
+    margin: .2rem;
+}
+
+.pieRow h5,
+.pieRow p {
+    margin: 0rem;
+}
+
+.pageTitle {
+    font-size: 35px;
+    color: #a593c2;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #B43110;
+    margin: 5px 10px;
+}
+
+.box:nth-child(1) {
+    order: 15;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /*background-color: #B43110;*/
+}
+
+.pieRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    padding-right: .4rem;
+}
+
+.pieRow>div {
+    flex-grow: 2;
+    padding-left: .5rem;
+}
+
+.leftMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>p,
+footer>address {
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width:600px) {
+    .leftMenu {
+        order: 1;
+    }
+}
